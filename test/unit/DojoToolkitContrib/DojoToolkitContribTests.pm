@@ -5,10 +5,8 @@ package DojoToolkitContribTests;
 use base qw(FoswikiTestCase);
 
 use strict;
-use TWiki;
+use Foswiki;
 use CGI;
-
-my $twiki;
 
 sub new {
     my $self = shift()->SUPER::new(@_);
@@ -20,8 +18,6 @@ sub set_up {
     my $this = shift;
 
     $this->SUPER::set_up();
-
-    $TWiki::Plugins::SESSION = $twiki;
 }
 
 sub tear_down {

@@ -1,10 +1,10 @@
-package TWiki::Contrib::DojoToolkitContrib;
+package Foswiki::Contrib::DojoToolkitContrib;
 use vars qw( $VERSION $pluginName );
 $VERSION = '$Rev$';
 $pluginName = 'DojoToolkitContrib';
 
 use strict;
-use TWiki::Func;
+use Foswiki::Func;
 
 
 #not sure its going to be useful, but....
@@ -16,11 +16,11 @@ sub requireJS {
     my $module = shift;
     
     #TODO: ( $name, $skin, $web ) paramters?
-    my $javascript = TWiki::Func::loadTemplate('javascript.dojo');
-    TWiki::Func::addToHEAD('AA'.$pluginName.'.javascript.dojo', $javascript);
+    my $javascript = Foswiki::Func::loadTemplate('javascript.dojo');
+    Foswiki::Func::addToHEAD('AA'.$pluginName.'.javascript.dojo', $javascript);
     
     my $output = "<script type=\"text/javascript\">dojo.require(\"$module\");</script>";
-    TWiki::Func::addToHEAD('AB'.$pluginName.'.'.$module, $output);
+    Foswiki::Func::addToHEAD('AB'.$pluginName.'.'.$module, $output);
 }
 
 

@@ -8,19 +8,7 @@ Contains an un-archived and ready for use copy of dojo toolkit 1.2.3 - see http:
 ---++ Documentation
 see the [[http://dojotoolkit.org/book/dojo-book-1-0][The Dojo Book]]
 
----++ Examples (you need to install the Dojo Contrib for them to work)
-   * [[%ATTACHURL%/dijit/demos/form.html]]
-   * [[%ATTACHURL%/dijit/demos/mail.html]]
-   * [[%ATTACHURL%/dojox/data/demos/demo_DataDemoTable.html]]
-   * [[%ATTACHURL%/dojox/data/demos/demo_FlickrStore.html]]
-   * [[%ATTACHURL%/dojox/data/demos/demo_MultiStores.html]]
-   * [[%ATTACHURL%/dojox/gfx/demos/butterfly.html]]
-   * [[%ATTACHURL%/dojox/gfx/demos/circles.html]]
-   * [[%ATTACHURL%/dojox/gfx/demos/clock.html]]
-   * [[%ATTACHURL%/dojox/gfx/demos/lion.html]]
-   * [[%ATTACHURL%/dojox/gfx/demos/tiger.html]]
-
-   
+  
 ---++ Usage
 This Contrib is a conveinience package, and should be used in conjunction with another Foswiki Extension - such as Foswiki:Extensions.RestPlugin.
 
@@ -42,6 +30,7 @@ If you're going to update the version of Dojo in the contrib, please use the olo
    * =tar zxvf /Users/sven/Desktop/dojo-release-1.1.0.tar.gz=
    * if the untar created a new directory :( move the contents up on, to overlay the original Foswiki files
    * svn rm the files that are missing (these have been removed from the latest release. (=svn stat | sed 's/!/svn rm/' | sh=)
+   * svn add the files that are new. (=svn stat | sed 's/?/svn add/' | sh=)
    * update the MANIFEST (=find pub ! -wholename '*.svn*' >> lib/Foswiki/Contrib/DojoToolkitContrib/MANIFEST=)
    * commit the new versions
 

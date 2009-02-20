@@ -1,5 +1,1 @@
-({
-	buttonOk: "OK",
-	buttonCancel: "Abbrechen",
-	buttonSave: "Speichern"
-})
+({"buttonOk":"OK","buttonCancel":"Abbrechen","buttonSave":"Speichern","itemClose":"Schließen"})

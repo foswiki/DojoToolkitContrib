@@ -1,5 +1,1 @@
-({
-	invalidMessage: "Wprowadzona wartość nie jest poprawna.",
-	missingMessage: "Ta wartość jest wymagana.",
-	rangeMessage: "Ta wartość jest spoza zakresu."
-})
+({"rangeMessage":"Ta wartość jest spoza zakresu.","invalidMessage":"Wprowadzona wartość jest niepoprawna.","missingMessage":"Ta wartość jest wymagana."})

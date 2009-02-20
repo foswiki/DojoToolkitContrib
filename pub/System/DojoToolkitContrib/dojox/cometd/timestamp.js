@@ -1,5 +1,16 @@
-dojo.provide("dojox.cometd.timestamp");
-dojo.require("dojox.cometd");
+/*
+	Copyright (c) 2004-2008, The Dojo Foundation All Rights Reserved.
+	Available via Academic Free License >= 2.1 OR the modified BSD license.
+	see: http://dojotoolkit.org/license for details
+*/
 
-// A cometd extension that adds a timestamp to every message
-dojox.cometd._extendOutList.push(function(msg){msg.timestamp=new Date().toUTCString();return msg});
+
+if(!dojo._hasResource["dojox.cometd.timestamp"]){
+dojo._hasResource["dojox.cometd.timestamp"]=true;
+dojo.provide("dojox.cometd.timestamp");
+dojo.require("dojox.cometd._base");
+dojox.cometd._extendOutList.push(function(_1){
+_1.timestamp=new Date().toUTCString();
+return _1;
+});
+}

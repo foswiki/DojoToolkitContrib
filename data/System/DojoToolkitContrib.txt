@@ -3,7 +3,7 @@
 %TOC%
 
 ---++ Summary of Contents
-Contains an un-archived and ready for use copy of dojo toolkit 1.1.0 - see http://dojotoolkit.org/
+Contains an un-archived and ready for use copy of dojo toolkit 1.2.3 - see http://dojotoolkit.org/
 
 ---++ Documentation
 see the [[http://dojotoolkit.org/book/dojo-book-1-0][The Dojo Book]]
@@ -65,7 +65,7 @@ If you're going to update the version of Dojo in the contrib, please use the olo
 |  Dependencies: | %$DEPENDENCIES% |
 |  Version: | %$VERSION% |
 |  Change History: | <!-- versions below in reverse order -->&nbsp; |
-|  Feb 2009 | port to Foswiki |
+|  Feb 2009 | port to Foswiki and update to 1.2.3 |
 |  15 Apr 2008: | fixes for dir names with spaces (calendar test data) |
 |  29 Mar 2008: | update to 1.1.0 |
 |  6 Nov 2007: | update to 1.0.0 |

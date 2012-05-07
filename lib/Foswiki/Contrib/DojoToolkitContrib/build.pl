@@ -1,6 +1,5 @@
 #!/usr/bin/perl -w
 use strict;
-
 # Standard preamble
 BEGIN { unshift @INC, split( /:/, $ENV{FOSWIKI_LIBS} ) }
 
@@ -13,7 +12,7 @@ our @ISA = qw( Foswiki::Contrib::Build );
 
 sub new {
     my $class = shift;
-    return bless( $class->SUPER::new("DojoToolkitContrib"), $class );
+    return bless( $class->SUPER::new( "DojoToolkitContrib" ), $class );
 }
 
 # Example: Override the build target
@@ -29,5 +28,5 @@ sub target_build {
 my $build = new BuildBuild();
 
 # Build the target on the command line, or the default target
-$build->build( $build->{target} );
+$build->build($build->{target});
 
